@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Nexo</title>
+  <desc id="desc">Connected green and aqua nodes over a dark grid, with the Nexo wordmark.</desc>
+  <defs>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#00ff41" stroke-opacity=".07"/>
+    </pattern>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00ff41"/>
+      <stop offset="1" stop-color="#00e5a0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="360" fill="#07090a"/>
+  <rect width="1200" height="360" fill="url(#grid)"/>
+  <path d="M97 278V84l161 194V84M366 276l55-83 54 83m-109-192 55 83 54-83M97 84l161 194" fill="none" stroke="url(#signal)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  <circle cx="97" cy="84" r="9" fill="#00ff41"/>
+  <circle cx="258" cy="278" r="9" fill="#00e5a0"/>
+  <circle cx="421" cy="193" r="8" fill="#00ff41"/>
+  <path d="M480 180h90m20 0h38m25 0h52" stroke="#00e5a0" stroke-opacity=".24" stroke-width="2"/>
+  <circle cx="570" cy="180" r="5" fill="#00e5a0"/>
+  <circle cx="628" cy="180" r="5" fill="#00ff41"/>
+  <text x="738" y="205" fill="#e2e8e2" font-family="JetBrains Mono, Fira Code, monospace" font-weight="700" font-size="94" letter-spacing="12">NEXO</text>
+  <text x="742" y="248" fill="#00e5a0" font-family="JetBrains Mono, Fira Code, monospace" font-size="19" letter-spacing="5">CONNECT THE SIGNAL</text>
+</svg>
