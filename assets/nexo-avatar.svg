@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Nexo</title>
+  <desc id="desc">An illuminated green network glyph on a dark square.</desc>
+  <defs>
+    <radialGradient id="ground"><stop stop-color="#123521"/><stop offset="1" stop-color="#07090a"/></radialGradient>
+    <linearGradient id="signal" x2="1" y2="1"><stop stop-color="#00ff41"/><stop offset="1" stop-color="#00e5a0"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="13"/></filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#ground)"/>
+  <rect x="24" y="24" width="464" height="464" rx="91" fill="none" stroke="#28643c" stroke-width="2"/>
+  <path d="M128 366V146l256 220V146" fill="none" stroke="#00ff41" stroke-width="19" stroke-linecap="round" stroke-linejoin="round" opacity=".52" filter="url(#glow)"/>
+  <path d="M128 366V146l256 220V146" fill="none" stroke="url(#signal)" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="128" cy="146" r="17" fill="#00ff41"/>
+  <circle cx="384" cy="366" r="17" fill="#00e5a0"/>
+  <circle cx="128" cy="366" r="10" fill="#8fffc2"/>
+  <circle cx="384" cy="146" r="10" fill="#8fffc2"/>
+</svg>
