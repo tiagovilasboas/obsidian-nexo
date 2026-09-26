@@ -26,7 +26,7 @@ The theme styles Obsidian's built-in graph. Folder groups are saved by Obsidian 
 | Operations | Lime `#b8ff5a` |
 | Meta | Aqua `#00e5a0` |
 
-The [graph guide](docs/GRAPH.md) includes example queries. A separate **Nexo Graph** plugin is planned for a configurable graph view with its own controls.
+The [graph guide](docs/GRAPH.md) includes example queries. For a dedicated graph view with configurable groups and its own controls, see the separate [Nexo Graph plugin](https://github.com/tiagovilasboas/obsidian-nexo-graph).
 
 ## Install
 
