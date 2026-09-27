@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.5.0 (release candidate; not published)
+## 0.5.0
 
 - Add a complete light appearance with graph colors tuned for contrast.
 - Include a synthetic demo vault and checks for theme CSS, Style Settings metadata, and release assets.
