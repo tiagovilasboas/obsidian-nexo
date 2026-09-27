@@ -1,0 +1,20 @@
+name: Theme quality
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/check-theme.mjs
+      - run: node -e "JSON.parse(require('node:fs').readFileSync('manifest.json', 'utf8'))"

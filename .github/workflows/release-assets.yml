@@ -1,0 +1,29 @@
+name: Verify published theme assets
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing release tag to verify
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name || inputs.tag }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Compare published assets to tagged source
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash scripts/verify-release-assets.sh "${{ github.event.release.tag_name || inputs.tag }}"

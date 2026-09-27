@@ -39,7 +39,7 @@ If you install the optional Style Settings plugin, **Settings → Style Settings
 3. In Obsidian, choose **Settings → Appearance → Themes → Nexo**.
 4. Set **Base color scheme → Dark**.
 
-The theme is currently distributed through GitHub releases. A Community Themes submission is planned.
+Installable theme releases are published on GitHub; the latest release includes the native graph controls described above. A Community Themes submission is planned.
 
 ## Add a support button to a note
 
