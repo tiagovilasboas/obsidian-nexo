@@ -3,6 +3,9 @@ import { readFileSync } from 'node:fs';
 const manifest = JSON.parse(readFileSync(new URL('../manifest.json', import.meta.url), 'utf8'));
 const demoAppearance = JSON.parse(readFileSync(new URL('../demo-vault/.obsidian/appearance.json', import.meta.url), 'utf8'));
 const css = readFileSync(new URL('../theme.css', import.meta.url), 'utf8');
+const demoThemeCss = readFileSync(new URL('../demo-vault/.obsidian/themes/Nexo/theme.css', import.meta.url), 'utf8');
+const demoThemeManifest = readFileSync(new URL('../demo-vault/.obsidian/themes/Nexo/manifest.json', import.meta.url), 'utf8');
+const manifestSource = readFileSync(new URL('../manifest.json', import.meta.url), 'utf8');
 const readme = readFileSync(new URL('../README.md', import.meta.url), 'utf8');
 const requiredSettings = [
   'graph-line',
@@ -27,6 +30,7 @@ const requiredLightGraphColors = [
 if (!/^\d+\.\d+\.\d+$/.test(manifest.version)) throw new Error('manifest.version must use semantic versioning');
 if (!/^\d+\.\d+\.\d+$/.test(manifest.minAppVersion)) throw new Error('manifest.minAppVersion must use semantic versioning');
 if (!manifest.name || !manifest.author || !manifest.minAppVersion) throw new Error('manifest is missing a required theme field');
+if (demoThemeCss !== css || demoThemeManifest !== manifestSource) throw new Error('Demo vault theme assets must match the root theme release files');
 if (demoAppearance.cssTheme !== manifest.name || demoAppearance.theme !== 'obsidian' || !['dark', 'light'].includes(demoAppearance.baseColorScheme)) {
   throw new Error('Demo vault must select Nexo through cssTheme and keep a valid Obsidian appearance mode');
 }
