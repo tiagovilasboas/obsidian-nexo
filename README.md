@@ -60,6 +60,10 @@ The callout opens the same support page. Nexo does not insert it into your notes
 
 Edit [theme.css](theme.css) directly. Obsidian reloads the theme after you update the installed file. Colors and component styles are grouped by purpose in the stylesheet. Contributions and bug reports are welcome in [Issues](../../issues).
 
+## Accessibility
+
+Nexo keeps readable text and link colors in both Obsidian appearances. The optional support button has a visible keyboard focus outline and respects the system reduced-motion preference. Include the same checks in your own release review with the [release checklist](docs/RELEASE_CHECKLIST.md).
+
 ## Design and license
 
 Nexo's visual system, palette, and CSS are original and made for Obsidian.

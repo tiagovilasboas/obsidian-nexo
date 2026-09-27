@@ -26,6 +26,11 @@ const requiredLightGraphColors = [
   '--graph-node-tag: #776000',
   '--graph-node-attachment: #006f6a'
 ];
+const requiredAccessibilityRules = [
+  '.theme-dark .callout[data-callout="buy"] .callout-content a:focus-visible',
+  '.theme-light .callout[data-callout="buy"] .callout-content a:focus-visible',
+  '@media (prefers-reduced-motion: reduce)'
+];
 
 if (!/^\d+\.\d+\.\d+$/.test(manifest.version)) throw new Error('manifest.version must use semantic versioning');
 if (!/^\d+\.\d+\.\d+$/.test(manifest.minAppVersion)) throw new Error('manifest.minAppVersion must use semantic versioning');
@@ -44,9 +49,13 @@ for (const mode of requiredModes) {
 for (const color of requiredLightGraphColors) {
   if (!css.includes(color)) throw new Error(`Light graph palette is missing ${color}`);
 }
+for (const rule of requiredAccessibilityRules) {
+  if (!css.includes(rule)) throw new Error(`Theme is missing its documented accessibility rule: ${rule}`);
+}
 if (!readme.includes('Settings → Style Settings → Nexo Graph')) throw new Error('README must explain where graph controls are found');
 if (!readme.includes('both Obsidian appearances')) throw new Error('README must document both Obsidian appearances');
 if (!readme.includes('reset control')) throw new Error('README must explain how to restore defaults');
 if (!readme.includes('docs/RELEASE_CHECKLIST.md')) throw new Error('README must link to the visual and release checklist');
+if (!readme.includes('## Accessibility')) throw new Error('README must document Nexo accessibility behavior');
 
 console.log(`Theme checks passed for Nexo ${manifest.version}`);
