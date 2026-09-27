@@ -1,0 +1,12 @@
+{
+  "name": "obsidian-nexo-theme-tools",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "check": "node scripts/check-theme.mjs",
+    "check:css": "node scripts/check-theme-css.mjs"
+  },
+  "devDependencies": {
+    "postcss": "8.5.28"
+  }
+}

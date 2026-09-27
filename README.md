@@ -32,6 +32,8 @@ The [graph guide](docs/GRAPH.md) includes example queries. For a dedicated graph
 
 If you install the optional Style Settings plugin, **Settings → Style Settings → Nexo Graph** lets you customize link, note, focus, tag, attachment, and unresolved-note colors, plus the native graph's background glow. Use that section's reset control to restore Nexo's defaults. Nexo works with its defaults when Style Settings is absent.
 
+Maintainers can use the [safe demo vault and release checklist](docs/RELEASE_CHECKLIST.md) to check a release without private notes.
+
 ## Install
 
 1. Download `manifest.json` and `theme.css` from the [latest release](../../releases/latest).

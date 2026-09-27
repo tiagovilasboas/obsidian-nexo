@@ -14,6 +14,7 @@ const requiredSettings = [
 ];
 
 if (!/^\d+\.\d+\.\d+$/.test(manifest.version)) throw new Error('manifest.version must use semantic versioning');
+if (!/^\d+\.\d+\.\d+$/.test(manifest.minAppVersion)) throw new Error('manifest.minAppVersion must use semantic versioning');
 if (!manifest.name || !manifest.author || !manifest.minAppVersion) throw new Error('manifest is missing a required theme field');
 if (!css.includes('name: Nexo Graph') || !css.includes('id: nexo-graph')) throw new Error('Style Settings section is missing its stable Nexo Graph identity');
 for (const id of requiredSettings) {
@@ -21,5 +22,6 @@ for (const id of requiredSettings) {
 }
 if (!readme.includes('Settings → Style Settings → Nexo Graph')) throw new Error('README must explain where graph controls are found');
 if (!readme.includes('reset control')) throw new Error('README must explain how to restore defaults');
+if (!readme.includes('docs/RELEASE_CHECKLIST.md')) throw new Error('README must link to the visual and release checklist');
 
 console.log(`Theme checks passed for Nexo ${manifest.version}`);

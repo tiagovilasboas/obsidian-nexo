@@ -16,5 +16,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
+      - run: npm ci
       - run: node scripts/check-theme.mjs
-      - run: node -e "JSON.parse(require('node:fs').readFileSync('manifest.json', 'utf8'))"
+      - run: node scripts/check-theme-css.mjs
