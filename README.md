@@ -6,7 +6,7 @@
 
 [Get Nexo](../../releases/latest) · [Graph palette](docs/GRAPH.md) · [Report an issue](../../issues)
 
-[![Buy me a coffee](https://raw.githubusercontent.com/tiagovilasboas/tiagovilasboas/main/assets/buy-me-a-coffee.svg)](https://buymeacoffee.com/nexoobsidian)
+[![Buy me a coffee](https://raw.githubusercontent.com/tiagovilasboas/tiagovilasboas/main/assets/buy-me-a-coffee.svg)](https://buymeacoffee.com/tiagovilasboas)
 
 ## What makes Nexo different
 
@@ -49,7 +49,7 @@ The button above supports the project from GitHub. To add a clickable button ins
 
 ```md
 > [!buy] Support my work
-> [Buy me a coffee](https://buymeacoffee.com/nexoobsidian)
+> [Buy me a coffee](https://buymeacoffee.com/tiagovilasboas)
 ```
 
 The callout opens the same support page. Nexo does not insert it into your notes or workspace automatically.
