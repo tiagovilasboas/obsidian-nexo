@@ -6,6 +6,8 @@
 
 [Get Nexo](../../releases/latest) · [Graph palette](docs/GRAPH.md) · [Report an issue](../../issues)
 
+Release candidate: **0.5.0** · [Changelog](CHANGELOG.md)
+
 [![Buy me a coffee](https://raw.githubusercontent.com/tiagovilasboas/tiagovilasboas/main/assets/buy-me-a-coffee.svg)](https://buymeacoffee.com/tiagovilasboas)
 
 ## What makes Nexo different
