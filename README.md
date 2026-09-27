@@ -6,6 +6,8 @@
 
 [Get Nexo](../../releases/latest) · [Graph palette](docs/GRAPH.md) · [Report an issue](../../issues)
 
+[![Support Nexo](assets/support-nexo.svg)](https://buymeacoffee.com/nexoobsidian)
+
 ## What makes Nexo different
 
 - **Signal, not noise.** Bright green marks navigation and important headings; neutral text keeps long notes comfortable to read.
@@ -28,6 +30,8 @@ The theme styles Obsidian's built-in graph. Folder groups are saved by Obsidian 
 
 The [graph guide](docs/GRAPH.md) includes example queries. For a dedicated graph view with configurable groups and its own controls, see the separate [Nexo Graph plugin](https://github.com/tiagovilasboas/obsidian-nexo-graph).
 
+If you install the optional Style Settings plugin, you can customize the native graph's link, note, focus, tag, and attachment colors. Nexo works with its defaults when Style Settings is absent.
+
 ## Install
 
 1. Download `manifest.json` and `theme.css` from the [latest release](../../releases/latest).
@@ -37,23 +41,23 @@ The [graph guide](docs/GRAPH.md) includes example queries. For a dedicated graph
 
 The theme is currently distributed through GitHub releases. A Community Themes submission is planned.
 
-## Optional support callout
+## Support Nexo
 
-Put this in a note after replacing the example address with your own support page:
+The theme includes a styled support button you can add to any note:
 
 ```md
 > [!buy] Support Nexo
-> [Buy me a coffee](https://buymeacoffee.com/your-page)
+> [Buy me a coffee](https://buymeacoffee.com/nexoobsidian)
 ```
 
-The callout is just CSS. It does not create an account, collect payments, or contact a third party on its own.
+The button opens the Nexo support page. It does not add ads to the workspace.
 
 ## Make it yours
 
 Edit [theme.css](theme.css) directly. Obsidian reloads the theme after you update the installed file. Colors and component styles are grouped by purpose in the stylesheet. Contributions and bug reports are welcome in [Issues](../../issues).
 
-## Credits and license
+## Design and license
 
-The care and approachability of [Things 2](https://github.com/colineckert/obsidian-things) inspired the experience. Nexo's design and CSS are original; no Things 2 code or assets are included.
+Nexo's visual system, palette, and CSS are original and made for Obsidian.
 
 Nexo is available under the [MIT license](LICENSE).

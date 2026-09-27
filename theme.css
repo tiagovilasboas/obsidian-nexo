@@ -114,6 +114,49 @@
   --graph-node-attachment: #00e5a0;
 }
 
+/* Optional controls provided when the Style Settings community plugin is installed.
+   Nexo keeps working with the defaults when Style Settings is absent.
+   @settings
+   name: Nexo Graph
+   id: nexo-graph
+   settings:
+     -
+       id: graph-line
+       title: Link color
+       type: variable-color
+       format: hex
+       opacity: false
+       default: '#1f6136'
+     -
+       id: graph-node
+       title: Note color
+       type: variable-color
+       format: hex
+       opacity: false
+       default: '#86ae90'
+     -
+       id: graph-node-focused
+       title: Focused note color
+       type: variable-color
+       format: hex
+       opacity: false
+       default: '#c7ff6b'
+     -
+       id: graph-node-tag
+       title: Tag color
+       type: variable-color
+       format: hex
+       opacity: false
+       default: '#b8ff5a'
+     -
+       id: graph-node-attachment
+       title: Attachment color
+       type: variable-color
+       format: hex
+       opacity: false
+       default: '#00e5a0'
+*/
+
 .theme-dark .graph-view {
   background: radial-gradient(circle at 52% 44%, #0c1912 0%, #07090a 66%);
 }
@@ -226,7 +269,7 @@
 
 /* A reusable, optional Buy/support CTA callout. Add it only to notes where wanted:
    > [!buy] Fuel Nexo
-   > [Apoiar](https://www.buymeacoffee.com/...)
+   > [Apoiar Nexo](https://buymeacoffee.com/nexoobsidian)
 */
 .theme-dark .callout[data-callout="buy"] {
   --callout-color: 0, 255, 65;
