@@ -50,4 +50,30 @@ for (const setting of settings) {
 const settingIds = settings.map(setting => setting.id);
 if (new Set(settingIds).size !== settingIds.length) throw new Error('Style Settings IDs must be unique');
 
+const modeGraphVariables = new Map([
+  ['.theme-dark', new Set()],
+  ['.theme-light', new Set()]
+]);
+root.walkRules(rule => {
+  const variables = modeGraphVariables.get(rule.selector);
+  if (!variables) return;
+  rule.walkDecls(declaration => {
+    if (declaration.prop.startsWith('--graph-')) variables.add(declaration.prop.slice(2));
+  });
+});
+
+for (const setting of settings.filter(setting => setting.type === 'variable-color')) {
+  for (const [mode, variables] of modeGraphVariables) {
+    if (!variables.has(setting.id)) {
+      throw new Error(`Style Settings control ${setting.id} is missing its ${mode} CSS variable`);
+    }
+  }
+}
+
+for (const setting of settings.filter(setting => setting.type === 'variable-number-slider')) {
+  if (!css.includes(`var(--${setting.id},`)) {
+    throw new Error(`Style Settings control ${setting.id} is not used with a no-plugin fallback`);
+  }
+}
+
 console.log(`CSS parsed; ${settingIds.length} unique Style Settings controls; no remote assets.`);
