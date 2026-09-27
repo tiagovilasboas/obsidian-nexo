@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 
 const manifest = JSON.parse(readFileSync(new URL('../manifest.json', import.meta.url), 'utf8'));
+const demoAppearance = JSON.parse(readFileSync(new URL('../demo-vault/.obsidian/appearance.json', import.meta.url), 'utf8'));
 const css = readFileSync(new URL('../theme.css', import.meta.url), 'utf8');
 const readme = readFileSync(new URL('../README.md', import.meta.url), 'utf8');
 const requiredSettings = [
@@ -26,6 +27,9 @@ const requiredLightGraphColors = [
 if (!/^\d+\.\d+\.\d+$/.test(manifest.version)) throw new Error('manifest.version must use semantic versioning');
 if (!/^\d+\.\d+\.\d+$/.test(manifest.minAppVersion)) throw new Error('manifest.minAppVersion must use semantic versioning');
 if (!manifest.name || !manifest.author || !manifest.minAppVersion) throw new Error('manifest is missing a required theme field');
+if (demoAppearance.cssTheme !== manifest.name || demoAppearance.theme !== 'obsidian' || !['dark', 'light'].includes(demoAppearance.baseColorScheme)) {
+  throw new Error('Demo vault must select Nexo through cssTheme and keep a valid Obsidian appearance mode');
+}
 if (!css.includes('name: Nexo Graph') || !css.includes('id: nexo-graph')) throw new Error('Style Settings section is missing its stable Nexo Graph identity');
 for (const id of requiredSettings) {
   if (!css.includes(`id: ${id}`)) throw new Error(`Missing Style Settings control: ${id}`);

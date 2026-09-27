@@ -1,4 +1,5 @@
 {
   "baseColorScheme": "dark",
-  "theme": "Nexo"
+  "theme": "obsidian",
+  "cssTheme": "Nexo"
 }
