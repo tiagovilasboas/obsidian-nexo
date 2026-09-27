@@ -2,7 +2,7 @@
 
 ![Nexo: connected green and aqua signals](assets/nexo-banner.svg)
 
-**An original Matrix-inspired theme for Obsidian.** Nexo gives your notes a calm, near-black canvas, a deliberate green hierarchy, and a graph that feels like a living network.
+**An original Matrix-inspired theme for Obsidian.** Nexo gives your notes a calm canvas, a deliberate green hierarchy, and a graph that feels like a living network in dark and light appearances.
 
 [Get Nexo](../../releases/latest) · [Graph palette](docs/GRAPH.md) · [Report an issue](../../issues)
 
@@ -11,15 +11,15 @@
 ## What makes Nexo different
 
 - **Signal, not noise.** Bright green marks navigation and important headings; neutral text keeps long notes comfortable to read.
-- **A graph with depth.** Dark green links, luminous nodes, a subtle radial backdrop, and four distinct green tones for groups.
+- **A graph with depth.** Mode-aware links and nodes, a subtle radial backdrop, and four distinct green tones for groups.
 - **A consistent workspace.** Tabs, navigation, code, tags, tasks, callouts, and links share the same palette.
 - **A support card you control.** The optional `buy` callout gives a note a clear support button without inserting ads into Obsidian.
 
-Nexo is designed for Obsidian's dark appearance. The theme is written from scratch and has no build dependencies, bundled fonts, remote assets, or required community plugins.
+Nexo supports both Obsidian appearances. Dark mode uses a near-black canvas and luminous Matrix greens; light mode uses soft neutral surfaces, forest-green text, and graph colors tuned for contrast. The theme is written from scratch and has no runtime build dependencies, bundled fonts, remote CSS assets, or required community plugins.
 
 ## Graph palette
 
-The theme styles Obsidian's built-in graph. Folder groups are saved by Obsidian in each vault, so use **Graph view → Settings → Groups** to assign your own queries:
+The theme styles Obsidian's built-in graph in both appearances. Folder groups are saved by Obsidian in each vault, so use **Graph view → Settings → Groups** to assign your own queries. These suggested group colors are tuned for Dark mode; see the [graph guide](docs/GRAPH.md) for light-mode suggestions too:
 
 | Group | Suggested color |
 | --- | --- |
@@ -39,7 +39,7 @@ Maintainers can use the [safe demo vault and release checklist](docs/RELEASE_CHE
 1. Download `manifest.json` and `theme.css` from the [latest release](../../releases/latest).
 2. Place both files in `<your-vault>/.obsidian/themes/Nexo/`.
 3. In Obsidian, choose **Settings → Appearance → Themes → Nexo**.
-4. Set **Base color scheme → Dark**.
+4. Choose **Base color scheme → Dark** or **Light** to match your preference.
 
 Installable theme releases are published on GitHub; the latest release includes the native graph controls described above. A Community Themes submission is planned.
 
