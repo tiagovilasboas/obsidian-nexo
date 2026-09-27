@@ -6,7 +6,7 @@
 
 [Get Nexo](../../releases/latest) · [Graph palette](docs/GRAPH.md) · [Report an issue](../../issues)
 
-[![Support Nexo](assets/support-nexo.svg)](https://buymeacoffee.com/nexoobsidian)
+[![Buy me a coffee](https://raw.githubusercontent.com/tiagovilasboas/tiagovilasboas/main/assets/buy-me-a-coffee.svg)](https://buymeacoffee.com/nexoobsidian)
 
 ## What makes Nexo different
 
@@ -30,7 +30,7 @@ The theme styles Obsidian's built-in graph. Folder groups are saved by Obsidian 
 
 The [graph guide](docs/GRAPH.md) includes example queries. For a dedicated graph view with configurable groups and its own controls, see the separate [Nexo Graph plugin](https://github.com/tiagovilasboas/obsidian-nexo-graph).
 
-If you install the optional Style Settings plugin, you can customize the native graph's link, note, focus, tag, and attachment colors. Nexo works with its defaults when Style Settings is absent.
+If you install the optional Style Settings plugin, **Settings → Style Settings → Nexo Graph** lets you customize link, note, focus, tag, attachment, and unresolved-note colors, plus the native graph's background glow. Use that section's reset control to restore Nexo's defaults. Nexo works with its defaults when Style Settings is absent.
 
 ## Install
 
@@ -41,16 +41,16 @@ If you install the optional Style Settings plugin, you can customize the native 
 
 The theme is currently distributed through GitHub releases. A Community Themes submission is planned.
 
-## Support Nexo
+## Add a support button to a note
 
-The theme includes a styled support button you can add to any note:
+The button above supports the project from GitHub. To add a clickable button inside Obsidian, copy this optional callout into a note. Nexo styles the link as a button; it appears only in notes where you add it.
 
 ```md
-> [!buy] Support Nexo
+> [!buy] Support my work
 > [Buy me a coffee](https://buymeacoffee.com/nexoobsidian)
 ```
 
-The button opens the Nexo support page. It does not add ads to the workspace.
+The callout opens the same support page. Nexo does not insert it into your notes or workspace automatically.
 
 ## Make it yours
 

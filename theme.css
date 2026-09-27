@@ -135,6 +135,13 @@
        opacity: false
        default: '#86ae90'
      -
+       id: graph-node-unresolved
+       title: Unresolved note color
+       type: variable-color
+       format: hex
+       opacity: false
+       default: '#4c7058'
+     -
        id: graph-node-focused
        title: Focused note color
        type: variable-color
@@ -155,10 +162,19 @@
        format: hex
        opacity: false
        default: '#00e5a0'
+     -
+       id: graph-glow-opacity
+       title: Graph background glow
+       description: Set to zero for a flat dark background.
+       type: variable-number-slider
+       default: 14
+       min: 0
+       max: 30
+       step: 1
 */
 
 .theme-dark .graph-view {
-  background: radial-gradient(circle at 52% 44%, #0c1912 0%, #07090a 66%);
+  background: radial-gradient(circle at 52% 44%, rgb(12 25 18 / calc(var(--graph-glow-opacity, 14) * 1%)) 0%, #07090a 66%);
 }
 
 /* Readable hierarchy: green is reserved for strong emphasis and headings. */
@@ -267,9 +283,9 @@
   accent-color: #00ff41;
 }
 
-/* A reusable, optional Buy/support CTA callout. Add it only to notes where wanted:
-   > [!buy] Fuel Nexo
-   > [Apoiar Nexo](https://buymeacoffee.com/nexoobsidian)
+/* Optional support button for a user-authored note callout:
+   > [!buy] Support my work
+   > [Buy me a coffee](https://buymeacoffee.com/nexoobsidian)
 */
 .theme-dark .callout[data-callout="buy"] {
   --callout-color: 0, 255, 65;
