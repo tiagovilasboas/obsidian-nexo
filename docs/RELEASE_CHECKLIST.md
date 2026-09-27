@@ -1,6 +1,7 @@
 # Release and visual checklist
 
 The `../demo-vault/` directory contains synthetic notes organized to show Nexo's four graph groups. It has no private or production data.
+The vault's `graph.json` preconfigures those path-based groups with the documented palette; `workspace.json` and other generated Obsidian state are intentionally ignored.
 
 ## Automated checks
 
@@ -24,6 +25,7 @@ Use the synthetic demo vault in Obsidian and a clean profile with the release fi
 
 - Nexo is selected in Dark and Light modes; headings, links, tags, tasks, tables, code, and callouts are readable in both.
 - Native Graph view renders the mode-appropriate radial background and distinguishes regular, focused, unresolved, tag, and attachment nodes in both modes.
+- Every demo wikilink resolves to a real note; the graph has no duplicate unresolved nodes caused by filename/title mismatches.
 - If Style Settings is installed, changing each graph control updates the graph and its reset action restores defaults. Repeat without Style Settings to confirm the theme still loads.
 - The optional `buy` callout is clickable in the note where it is authored; no support content appears in other notes or app chrome.
 - Graph controls remain usable at narrow and wide pane sizes, and reduced-motion preferences do not cause distracting transitions.

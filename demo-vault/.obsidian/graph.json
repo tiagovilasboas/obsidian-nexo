@@ -1,0 +1,51 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:pages/pessoal",
+      "color": {
+        "a": 1,
+        "rgb": 8713650
+      }
+    },
+    {
+      "query": "path:pages/carreira",
+      "color": {
+        "a": 1,
+        "rgb": 65345
+      }
+    },
+    {
+      "query": "path:pages/ops",
+      "color": {
+        "a": 1,
+        "rgb": 12123994
+      }
+    },
+    {
+      "query": "path:pages/meta",
+      "color": {
+        "a": 1,
+        "rgb": 58784
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 1,
+  "close": true
+}

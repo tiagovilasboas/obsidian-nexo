@@ -2,3 +2,6 @@
 __pycache__/
 *.pyc
 node_modules/
+demo-vault/.obsidian/app.json
+demo-vault/.obsidian/core-plugins.json
+demo-vault/.obsidian/workspace.json

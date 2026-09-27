@@ -28,7 +28,7 @@ The theme styles Obsidian's built-in graph in both appearances. Folder groups ar
 | Operations | Lime `#b8ff5a` |
 | Meta | Aqua `#00e5a0` |
 
-The [graph guide](docs/GRAPH.md) includes example queries. For a dedicated graph view with configurable groups and its own controls, see the separate [Nexo Graph plugin](https://github.com/tiagovilasboas/obsidian-nexo-graph).
+The included demo vault comes with the four sample groups configured, so its built-in graph shows the palette as soon as you open it. In your own vault, create groups under **Graph view → Settings → Groups**; the theme cannot set vault-specific folder queries for you. The [graph guide](docs/GRAPH.md) includes example queries. For a dedicated graph view with configurable groups and its own controls, see the separate [Nexo Graph plugin](https://github.com/tiagovilasboas/obsidian-nexo-graph).
 
 If you install the optional Style Settings plugin, **Settings → Style Settings → Nexo Graph** lets you customize link, note, focus, tag, attachment, and unresolved-note colors, plus the native graph's background glow. Use that section's reset control to restore Nexo's defaults. Nexo works with its defaults when Style Settings is absent.
 
