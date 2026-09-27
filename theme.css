@@ -429,6 +429,12 @@
   box-shadow: 0 0 24px rgb(0 255 65 / 28%);
 }
 
+.theme-dark .callout[data-callout="buy"] .callout-content a:focus-visible {
+  outline: 3px solid #c7ff6b;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px rgb(5 10 5 / 88%), 0 0 24px rgb(0 255 65 / 28%);
+}
+
 /* Light mode keeps the same green identity with readable text and surfaces. */
 .theme-light .graph-view {
   background: radial-gradient(circle at 52% 44%, rgb(85 145 91 / calc(var(--graph-glow-opacity, 14) * 1%)) 0%, #fbfdfb 70%);
@@ -568,6 +574,12 @@
   filter: brightness(1.08);
   transform: translateY(-1px);
   box-shadow: 0 4px 16px rgb(17 123 50 / 25%);
+}
+
+.theme-light .callout[data-callout="buy"] .callout-content a:focus-visible {
+  outline: 3px solid #075a25;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px rgb(251 253 251 / 96%), 0 4px 16px rgb(17 123 50 / 25%);
 }
 
 @media (prefers-reduced-motion: reduce) {
