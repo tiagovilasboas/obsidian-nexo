@@ -14,7 +14,8 @@ const requiredSettings = [
   'graph-node-focused',
   'graph-node-tag',
   'graph-node-attachment',
-  'graph-glow-opacity'
+  'graph-glow-opacity',
+  'graph-field-opacity'
 ];
 const requiredModes = ['.theme-dark', '.theme-light'];
 const requiredLightGraphColors = [

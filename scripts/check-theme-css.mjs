@@ -50,6 +50,19 @@ for (const setting of settings) {
 const settingIds = settings.map(setting => setting.id);
 if (new Set(settingIds).size !== settingIds.length) throw new Error('Style Settings IDs must be unique');
 
+for (const mode of ['.theme-dark', '.theme-light']) {
+  let graphBackground = '';
+  root.walkRules(rule => {
+    if (rule.selectors?.map(value => value.trim()).includes(`${mode} .graph-view`)) {
+      graphBackground = rule.nodes?.find(node => node.type === 'decl' && node.prop === 'background')?.value || '';
+    }
+  });
+  const radialLayers = (graphBackground.match(/radial-gradient\(/g) || []).length;
+  if (radialLayers < 4 || !graphBackground.includes('var(--graph-field-opacity, 6)')) {
+    throw new Error(`${mode} graph needs layered Signal Field gradients and a fallback intensity control`);
+  }
+}
+
 const modeGraphVariables = new Map([
   ['.theme-dark', new Set()],
   ['.theme-light', new Set()]

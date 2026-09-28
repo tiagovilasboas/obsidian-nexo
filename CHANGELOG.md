@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.0
+
+- Introduce Signal Field: layered emerald and teal light with quiet orbital rings behind the native graph.
+- Add a Style Settings intensity control that can soften or remove the field in both appearances.
+
 ## 0.5.0
 
 - Add a complete light appearance with graph colors tuned for contrast.

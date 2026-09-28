@@ -278,10 +278,23 @@
        min: 0
        max: 30
        step: 1
+     -
+       id: graph-field-opacity
+       title: Signal field intensity
+       description: Tune the quiet orbital rings and color fields behind the graph.
+       type: variable-number-slider
+       default: 6
+       min: 0
+       max: 16
+       step: 1
 */
 
 .theme-dark .graph-view {
-  background: radial-gradient(circle at 52% 44%, rgb(12 25 18 / calc(var(--graph-glow-opacity, 14) * 1%)) 0%, #07090a 66%);
+  background:
+    radial-gradient(circle at 52% 44%, transparent 0 14%, rgb(0 255 65 / calc(var(--graph-field-opacity, 6) * 0.24%)) 14.1% 14.25%, transparent 14.35% 33%, rgb(0 229 160 / calc(var(--graph-field-opacity, 6) * 0.16%)) 33.1% 33.25%, transparent 33.35% 100%),
+    radial-gradient(ellipse at 22% 24%, rgb(0 255 65 / calc(var(--graph-field-opacity, 6) * 0.7%)) 0%, transparent 42%),
+    radial-gradient(ellipse at 80% 76%, rgb(0 229 160 / calc(var(--graph-field-opacity, 6) * 0.6%)) 0%, transparent 44%),
+    radial-gradient(circle at 52% 44%, rgb(12 25 18 / calc(var(--graph-glow-opacity, 14) * 1%)) 0%, #07090a 66%);
 }
 
 /* Readable hierarchy: green is reserved for strong emphasis and headings. */
@@ -437,7 +450,11 @@
 
 /* Light mode keeps the same green identity with readable text and surfaces. */
 .theme-light .graph-view {
-  background: radial-gradient(circle at 52% 44%, rgb(85 145 91 / calc(var(--graph-glow-opacity, 14) * 1%)) 0%, #fbfdfb 70%);
+  background:
+    radial-gradient(circle at 52% 44%, transparent 0 14%, rgb(8 124 43 / calc(var(--graph-field-opacity, 6) * 0.2%)) 14.1% 14.25%, transparent 14.35% 33%, rgb(8 121 91 / calc(var(--graph-field-opacity, 6) * 0.14%)) 33.1% 33.25%, transparent 33.35% 100%),
+    radial-gradient(ellipse at 22% 24%, rgb(8 124 43 / calc(var(--graph-field-opacity, 6) * 0.45%)) 0%, transparent 42%),
+    radial-gradient(ellipse at 80% 76%, rgb(8 121 91 / calc(var(--graph-field-opacity, 6) * 0.4%)) 0%, transparent 44%),
+    radial-gradient(circle at 52% 44%, rgb(85 145 91 / calc(var(--graph-glow-opacity, 14) * 1%)) 0%, #fbfdfb 70%);
 }
 
 .theme-light .markdown-rendered h1,
