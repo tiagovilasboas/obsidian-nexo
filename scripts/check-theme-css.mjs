@@ -76,4 +76,43 @@ for (const setting of settings.filter(setting => setting.type === 'variable-numb
   }
 }
 
+const buyLink = '.callout[data-callout="buy"] .callout-content a';
+for (const mode of ['.theme-dark', '.theme-light']) {
+  const selector = `${mode} ${buyLink}:focus-visible`;
+  let focusRule;
+  root.walkRules(rule => {
+    if (rule.selectors?.map(value => value.trim()).includes(selector)) focusRule = rule;
+  });
+  if (!focusRule) throw new Error(`Missing keyboard focus rule: ${selector}`);
+  const color = focusRule.nodes?.find(node => node.type === 'decl' && node.prop === 'outline-color');
+  const shorthand = focusRule.nodes?.find(node => node.type === 'decl' && node.prop === 'outline');
+  const outlineValue = shorthand?.value ?? '';
+  const hasColor = Boolean(color?.value || outlineValue.split(/\s+/).some(token => /^#[\da-f]{3,8}$/i.test(token)));
+  if (!/\b3px\b/.test(outlineValue) || !/\bsolid\b/.test(outlineValue) || !hasColor) {
+    throw new Error(`${selector} must define a 3px solid outline with a visible color`);
+  }
+  const offset = focusRule.nodes?.find(node => node.type === 'decl' && node.prop === 'outline-offset');
+  if (offset?.value !== '3px') {
+    throw new Error(`${selector} must set outline-offset: 3px`);
+  }
+}
+
+let reducedMotionRule;
+root.walkAtRules('media', rule => {
+  if (rule.params.trim() === '(prefers-reduced-motion: reduce)') reducedMotionRule = rule;
+});
+if (!reducedMotionRule) throw new Error('Buy callout must respect prefers-reduced-motion');
+for (const selector of [
+  `.theme-dark ${buyLink}`,
+  `.theme-light ${buyLink}`
+]) {
+  let transitionDisabled = false;
+  reducedMotionRule.walkRules(rule => {
+    if (rule.selectors?.map(value => value.trim()).includes(selector)) {
+      transitionDisabled = rule.nodes?.some(node => node.type === 'decl' && node.prop === 'transition' && node.value === 'none') ?? false;
+    }
+  });
+  if (!transitionDisabled) throw new Error(`${selector} must disable transitions for reduced motion`);
+}
+
 console.log(`CSS parsed; ${settingIds.length} unique Style Settings controls; no remote assets.`);
