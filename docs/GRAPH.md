@@ -1,7 +1,10 @@
 # Graph palette
 
 Nexo colors the graph canvas, ordinary nodes, links, focused nodes, tags and
-attachments through Obsidian's graph CSS variables. To distinguish folders,
+attachments through Obsidian's graph CSS variables. Signal Field adds two quiet
+orbital rings and layered emerald/teal light behind the graph; it does not move
+nodes or links. Use **Style Settings → Nexo Graph → Signal field intensity** to
+reduce or remove that atmosphere. To distinguish folders,
 create color groups in **Graph view → Settings → Groups**. Group colors belong
 to the vault's graph settings; a theme cannot assign folder queries globally.
 

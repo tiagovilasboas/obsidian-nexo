@@ -13,7 +13,7 @@
 ## What makes Nexo different
 
 - **Signal, not noise.** Bright green marks navigation and important headings; neutral text keeps long notes comfortable to read.
-- **A graph with depth.** Mode-aware links and nodes, a subtle radial backdrop, and four distinct green tones for groups.
+- **A graph with a point of view.** Signal Field layers quiet orbital rings and emerald/teal auroras behind the network, with a tunable intensity and four distinct green group tones.
 - **A consistent workspace.** Tabs, navigation, code, tags, tasks, callouts, and links share the same palette.
 - **A support card you control.** The optional `buy` callout gives a note a clear support button without inserting ads into Obsidian.
 
@@ -32,7 +32,7 @@ The theme styles Obsidian's built-in graph in both appearances. Folder groups ar
 
 The included demo vault comes with the four sample groups configured, so its built-in graph shows the palette as soon as you open it. In your own vault, create groups under **Graph view → Settings → Groups**; the theme cannot set vault-specific folder queries for you. The [graph guide](docs/GRAPH.md) includes example queries. For a dedicated graph view with configurable groups and its own controls, see the separate [Nexo Graph plugin](https://github.com/tiagovilasboas/obsidian-nexo-graph).
 
-If you install the optional Style Settings plugin, **Settings → Style Settings → Nexo Graph** lets you customize link, note, focus, tag, attachment, and unresolved-note colors, plus the native graph's background glow. Use that section's reset control to restore Nexo's defaults. Nexo works with its defaults when Style Settings is absent.
+If you install the optional Style Settings plugin, **Settings → Style Settings → Nexo Graph** lets you customize link, note, focus, tag, attachment, and unresolved-note colors, plus the native graph's background glow and Signal Field intensity. Use that section's reset control to restore Nexo's defaults. Nexo works with its defaults when Style Settings is absent.
 
 Maintainers can use the [safe demo vault and release checklist](docs/RELEASE_CHECKLIST.md) to check a release without private notes. The demo vault includes the current theme assets and selects Nexo automatically; the quality check verifies those assets match the release files.
 
@@ -43,7 +43,7 @@ Maintainers can use the [safe demo vault and release checklist](docs/RELEASE_CHE
 3. In Obsidian, choose **Settings → Appearance → Themes → Nexo**.
 4. Choose **Base color scheme → Dark** or **Light** to match your preference.
 
-Installable theme releases are published on GitHub; the latest release includes the native graph controls described above. A Community Themes submission is planned.
+Installable theme releases are published on GitHub. Signal Field is part of the next theme version; the latest published release may not include it yet. A Community Themes submission is planned.
 
 ## Add a support button to a note
 
