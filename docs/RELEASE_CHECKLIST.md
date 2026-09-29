@@ -1,6 +1,6 @@
 # Release and visual checklist
 
-The `../demo-vault/` directory contains 57 synthetic notes and 291 resolved links organized to show Nexo's four graph groups. It has no private or production data. The README animation is an original product illustration; it is not a substitute for a real Obsidian capture.
+The `../demo-vault/` directory contains 57 synthetic notes and 291 resolved links organized to show Nexo's four graph groups. It has no private or production data. The README does not currently include a graph image: the previous sparse animation was removed because it did not represent the current runtime. Add a real Obsidian capture only after checking the released theme in the demo vault; never present a generated illustration as a runtime screenshot.
 The vault's `graph.json` preconfigures those path-based groups with the documented palette; `workspace.json` and other generated Obsidian state are intentionally ignored.
 
 ## Automated checks
