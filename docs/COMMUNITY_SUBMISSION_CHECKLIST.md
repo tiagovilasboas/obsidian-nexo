@@ -4,7 +4,7 @@ This is the reproducible gate for Nexo's first submission to the [Obsidian Commu
 
 ## Current decision
 
-**Do not submit yet.** Nexo 0.6.0 is released, but the required repository screenshot does not exist. It must be a real capture from Obsidian with the released Nexo files installed; a rendered SVG, mockup, or generated image is not acceptable evidence.
+**Do not submit yet.** Nexo 0.6.0 is released and the README now has an original animated product illustration, but the required repository screenshot does not exist. It must be a real capture from Obsidian with the released Nexo files installed; the animation, a rendered SVG, mockup, or generated image is not acceptable evidence.
 
 ## Requirement and evidence
 
@@ -16,7 +16,7 @@ This is the reproducible gate for Nexo's first submission to the [Obsidian Commu
 | Valid root `manifest.json` | **done** | [`manifest.json`](../manifest.json) has `name`, `author`, semantic `version` `0.6.0`, and semantic `minAppVersion` `1.13.0`. The name avoids prohibited `Obsidian` and `Theme` terms. |
 | Theme does not load network assets | **done** | [`theme.css`](../theme.css) has no `@import` or remote `url(...)`; `npm run check:css` enforces this. |
 | Current version has a published matching release | **done** | [release `0.6.0`](https://github.com/tiagovilasboas/obsidian-nexo/releases/tag/0.6.0) is published, its tag matches `manifest.json`, and it contains `manifest.json` and `theme.css`. Asset verification and the release workflow passed on 29 September 2026. |
-| Screenshot path in repository | **blocked** | No tracked `screenshots/` directory or screenshot currently exists. Capture an actual 512 × 288 (16:9) Obsidian screenshot, save it as `screenshots/nexo-0.6.0.png`, commit it to the default branch, then use that exact relative path in the directory form. |
+| Screenshot path in repository | **blocked** | No tracked `screenshots/` directory or real Obsidian screenshot currently exists. `assets/nexo-graph-showcase.gif` is a synthetic product illustration, not submission evidence. Capture an actual 512 × 288 (16:9) Obsidian screenshot, save it as `screenshots/nexo-0.6.0.png`, commit it to the default branch, then use that exact relative path in the directory form. |
 | Screenshot accurately represents the release | **blocked** | In a clean Obsidian profile, install the published `0.6.0` files into the demo vault, select Nexo, and capture a safe synthetic view. Record Obsidian version, Nexo tag, appearance, and enabled community plugins in the PR or release notes. Do not use a mock, SVG, or private vault content. |
 | Supported modes chosen in the form | **pending** | Select **Dark** and **Light** only after verifying the real captures and manual review in both modes. [`theme.css`](../theme.css) and automated checks support both, but the directory form has not been completed. |
 | Obsidian account and linked GitHub account | **pending** | Sign in at [community.obsidian.md](https://community.obsidian.md), connect the GitHub owner account, then select the owner in the submission form. This requires the maintainer's account session. |
