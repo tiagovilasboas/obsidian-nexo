@@ -43,7 +43,7 @@ Maintainers can use the [safe demo vault and release checklist](docs/RELEASE_CHE
 3. In Obsidian, choose **Settings → Appearance → Themes → Nexo**.
 4. Choose **Base color scheme → Dark** or **Light** to match your preference.
 
-Installable theme releases are published on GitHub. Signal Field is part of the next theme version; the latest published release may not include it yet. A Community Themes submission is planned.
+Installable theme releases are published on GitHub. **Signal Field ships in Nexo 0.6.0** and styles Obsidian's built-in graph in dark and light appearances. A Community Themes submission is the remaining distribution step.
 
 ## Add a support button to a note
 
