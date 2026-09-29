@@ -1,6 +1,6 @@
 # Release and visual checklist
 
-The `../demo-vault/` directory contains synthetic notes organized to show Nexo's four graph groups. It has no private or production data.
+The `../demo-vault/` directory contains 57 synthetic notes and 291 resolved links organized to show Nexo's four graph groups. It has no private or production data. The README animation is an original product illustration; it is not a substitute for a real Obsidian capture.
 The vault's `graph.json` preconfigures those path-based groups with the documented palette; `workspace.json` and other generated Obsidian state are intentionally ignored.
 
 ## Automated checks

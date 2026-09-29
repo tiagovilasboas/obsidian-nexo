@@ -32,6 +32,12 @@ The theme styles Obsidian's built-in graph in both appearances. Folder groups ar
 
 The included demo vault comes with the four sample groups configured, so its built-in graph shows the palette as soon as you open it. In your own vault, create groups under **Graph view → Settings → Groups**; the theme cannot set vault-specific folder queries for you. The [graph guide](docs/GRAPH.md) includes example queries. For a dedicated graph view with configurable groups and its own controls, see the separate [Nexo Graph plugin](https://github.com/tiagovilasboas/obsidian-nexo-graph).
 
+## See the graph in motion
+
+![Animated Nexo Signal Field with a fictional 57-note, four-group demo hub](assets/nexo-graph-showcase.gif)
+
+This original animation illustrates the visual direction with synthetic data. It is a product illustration, not a capture of the Obsidian app. The public demo vault contains 57 fictional notes and 291 resolved links; it has no private or production content.
+
 If you install the optional Style Settings plugin, **Settings → Style Settings → Nexo Graph** lets you customize link, note, focus, tag, attachment, and unresolved-note colors, plus the native graph's background glow and Signal Field intensity. Use that section's reset control to restore Nexo's defaults. Nexo works with its defaults when Style Settings is absent.
 
 Maintainers can use the [safe demo vault and release checklist](docs/RELEASE_CHECKLIST.md) to check a release without private notes. The demo vault includes the current theme assets and selects Nexo automatically; the quality check verifies those assets match the release files.
