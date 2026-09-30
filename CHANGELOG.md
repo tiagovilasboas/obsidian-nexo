@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.1
+
+- Point the funding link, README badge and optional support callout to GitHub Sponsors.
+
 ## 0.6.0
 
 - Introduce Signal Field: layered emerald and teal light with quiet orbital rings behind the native graph.
