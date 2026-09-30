@@ -405,7 +405,7 @@
 
 /* Optional support button for a user-authored note callout:
    > [!buy] Support my work
-   > [Buy me a coffee](https://buymeacoffee.com/tiagovilasboas)
+   > [Sponsor on GitHub](https://github.com/sponsors/tiagovilasboas)
 */
 .theme-dark .callout[data-callout="buy"] {
   --callout-color: 0, 255, 65;
